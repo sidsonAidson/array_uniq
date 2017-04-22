@@ -23,5 +23,16 @@ uniq([{x:12, y:23}, {x:-1, y:3}, {x:12, y:23}, {x:33, y:23}], (e1, e2) => {
 
 ```
 
+```js
+const uniq_immu = require('./index.js').nonmutate;
+var og = [1,'1',1,'3',3,4,6,7];
+var nw = uniq_immu(og); // return new array(shallow copy)
+nw.push(344);
+
+console.log(og);
+console.log(nw);
+```
+
 ## Api
-###-unique(array, [fnCmp|bool])
+###-require('unique_array')(array, [fnCmp|bool])
+###-require('unique_array').nonmutate(array, [fnCmp|bool])

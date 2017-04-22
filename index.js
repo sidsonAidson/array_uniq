@@ -46,3 +46,13 @@ module.exports = function (arr, is_equal) {
     }
     return arr;
 };
+
+module.exports.nonmutate = function (arr, is_equal) {
+    if (!Array.isArray(arr)) {
+        throw new TypeError('Array expected '+typeof arr + " given");
+    }
+
+    var new_array = arr.slice();
+
+    return module.exports(new_array, is_equal);
+};
