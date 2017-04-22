@@ -1,0 +1,29 @@
+{
+  "name": "unique_array",
+  "version": "1.0.0",
+  "description": "Remove duplicates  from array",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "array",
+    "unique",
+    "array_uniq",
+    "uniq_array",
+    "set",
+    "remove",
+    "uniq",
+    "duplicate"
+  ],
+  "author": "sidson_aidson",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sidsonAidson/array_uniq.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sidsonAidson/array_uniq/issues"
+  },
+  "homepage": "https://github.com/sidsonAidson/array_uniq#readme"
+}
